@@ -9,12 +9,15 @@
         </div>
         <div class="country-select-area">
         <p>
+            <router-link to="/america">
             <button type="button"
             class="btn btn-outline-primary"
             @click="currentComponent = 'America'"
           >
             アメリカ
           </button>
+          </router-link>
+          <router-link to="/italy">
           <button
             type="button"
             class="btn btn-outline-secondary country-btn1"
@@ -22,6 +25,8 @@
           >
             イタリア
           </button>
+          </router-link>
+          <router-link to="/germany">
           <button
             type="button"
             class="btn btn-outline-success"
@@ -29,8 +34,10 @@
           >
             ドイツ
           </button>
+          </router-link>
         </p>
         <p>
+        <router-link to="/paris">
           <button
             type="button"
             class="btn btn-outline-danger"
@@ -38,6 +45,8 @@
           >
             パリ
           </button>
+          </router-link>
+          <router-link to="/australia">
           <button
             type="button"
             class="btn btn-outline-warning"
@@ -45,6 +54,8 @@
           >
             オーストラリア
           </button>
+          </router-link>
+          <router-link to="/russia">
           <button
             type="button"
             class="btn btn-outline-info"
@@ -52,6 +63,7 @@
           >
             ロシア
           </button>
+          </router-link>
         </p>
       </div>
       <component :is="currentComponent"></component>   
@@ -60,12 +72,12 @@
 
 
 <script>
-import America from './America.vue';
-import Australia from './Australia.vue';
-import Germany from './Germany.vue';
-import Italy from './Italy.vue';
-import Paris from './Paris.vue';
-import Russia from './Russia.vue';
+import America from '../views/America.vue';
+import Australia from '../views/Australia.vue';
+import Germany from '../views/Germany.vue';
+import Italy from '../views/Italy.vue';
+import Paris from '../views/Paris.vue';
+import Russia from '../views/Russia.vue';
 
 export default {
   data() {
